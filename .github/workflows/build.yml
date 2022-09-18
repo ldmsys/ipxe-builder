@@ -3,6 +3,8 @@ name: Automatic Docker Image Build
 on:
   push:
     branches: [ master ]
+  schedule:
+    - cron:  '0 0 * * *'
 
 jobs:
   # This workflow contains a single job called "build"
