@@ -8,3 +8,4 @@ RUN make bin/ipxe.lkrn bin/ipxe.dsk bin/ipxe.pdsk bin/undionly.kpxe bin/ipxe.pxe
 RUN mkdir hybrid
 RUN util/genfsimg -o hybrid/ipxe.usb bin/ipxe.lkrn bin-x86_64-efi/ipxe.efi
 RUN util/genfsimg -o hybrid/ipxe.iso bin/ipxe.lkrn bin-x86_64-efi/ipxe.efi
+COPY build.sh /root/ipxe/build.sh
