@@ -9,5 +9,5 @@ RUN mkdir hybrid
 RUN util/genfsimg -o hybrid/ipxe.usb bin/ipxe.lkrn bin-x86_64-efi/ipxe.efi
 RUN util/genfsimg -o hybrid/ipxe.iso bin/ipxe.lkrn bin-x86_64-efi/ipxe.efi
 COPY build.sh /root/ipxe/build.sh
-RUN chmod +x build.sh
 WORKDIR /root/ipxe
+RUN chmod +x build.sh
