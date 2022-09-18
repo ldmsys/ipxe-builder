@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 RUN apt-get update
-RUN apt-get install -y build-essential xorriso syslinux
+RUN apt-get install -y build-essential xorriso syslinux git
 WORKDIR /root
 RUN git clone https://github.com/ipxe/ipxe
 WORKDIR /root/ipxe/src
