@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 RUN sed -i 's/archive.ubuntu.com/ftp.kaist.ac.kr/g' /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install build-essential xorriso syslinux
+RUN apt-get install -y build-essential xorriso syslinux
 WORKDIR /root
 RUN git clone https://github.com/ipxe/ipxe
 WORKDIR /root/ipxe/src
